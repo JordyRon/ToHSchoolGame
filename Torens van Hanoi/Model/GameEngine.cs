@@ -7,6 +7,7 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using TowersOfHanoi.Properties;
 using TowersOfHanoi.Rules;
+using TowersOfHanoi.Views;
 
 namespace TowersOfHanoi.Models
 {

@@ -32,12 +32,12 @@
             this.timeCalculationLabel = new System.Windows.Forms.Label();
             this.easterEgg = new System.Windows.Forms.Panel();
             this.tohGame = new System.Windows.Forms.Panel();
+            this.buttonResetGame = new System.Windows.Forms.Button();
             this.groupBoxMessages = new System.Windows.Forms.GroupBox();
             this.textBoxMessages = new System.Windows.Forms.TextBox();
             this.labelMoves = new System.Windows.Forms.Label();
             this.textBoxMoves = new System.Windows.Forms.TextBox();
             this.gamePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.towerOne = new TowersOfHanoi.Views.TowerUserControl();
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,8 +45,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.easterEggText = new System.Windows.Forms.Label();
-            this.towerThree = new TowersOfHanoi.Views.TowerUserControl();
             this.towerTwo = new TowersOfHanoi.Views.TowerUserControl();
+            this.towerOne = new TowersOfHanoi.Views.TowerUserControl();
+            this.towerThree = new TowersOfHanoi.Views.TowerUserControl();
             this.groupBox1.SuspendLayout();
             this.easterEgg.SuspendLayout();
             this.tohGame.SuspendLayout();
@@ -208,6 +209,7 @@
             // 
             // tohGame
             // 
+            this.tohGame.Controls.Add(this.buttonResetGame);
             this.tohGame.Controls.Add(this.groupBoxMessages);
             this.tohGame.Controls.Add(this.labelMoves);
             this.tohGame.Controls.Add(this.textBoxMoves);
@@ -219,6 +221,16 @@
             this.tohGame.Size = new System.Drawing.Size(459, 380);
             this.tohGame.TabIndex = 6;
             this.tohGame.Visible = false;
+            // 
+            // buttonResetGame
+            // 
+            this.buttonResetGame.Location = new System.Drawing.Point(284, 342);
+            this.buttonResetGame.Name = "buttonResetGame";
+            this.buttonResetGame.Size = new System.Drawing.Size(75, 23);
+            this.buttonResetGame.TabIndex = 10;
+            this.buttonResetGame.Text = "Reset";
+            this.buttonResetGame.UseVisualStyleBackColor = true;
+            this.buttonResetGame.Click += new System.EventHandler(this.buttonResetGame_Click);
             // 
             // groupBoxMessages
             // 
@@ -238,6 +250,7 @@
             this.textBoxMessages.ReadOnly = true;
             this.textBoxMessages.Size = new System.Drawing.Size(194, 20);
             this.textBoxMessages.TabIndex = 8;
+            this.textBoxMessages.Text = "Je kan het halen in 31 stappen";
             // 
             // labelMoves
             // 
@@ -262,7 +275,7 @@
             this.gamePanel.ColumnCount = 3;
             this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.58044F));
             this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.41956F));
-            this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
+            this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
             this.gamePanel.Controls.Add(this.towerTwo, 0, 0);
             this.gamePanel.Controls.Add(this.towerOne, 0, 0);
             this.gamePanel.Controls.Add(this.towerThree, 1, 0);
@@ -274,19 +287,9 @@
             this.gamePanel.Size = new System.Drawing.Size(435, 270);
             this.gamePanel.TabIndex = 5;
             // 
-            // towerOne
-            // 
-            this.towerOne.AllowDrop = true;
-            this.towerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.towerOne.Location = new System.Drawing.Point(2, 2);
-            this.towerOne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.towerOne.Name = "towerOne";
-            this.towerOne.Size = new System.Drawing.Size(132, 266);
-            this.towerOne.TabIndex = 0;
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(337, 335);
+            this.button4.Location = new System.Drawing.Point(369, 342);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -351,29 +354,39 @@
             this.easterEggText.TabIndex = 0;
             this.easterEggText.Text = "WOW je hebt mn easter egg ontdekt";
             // 
-            // towerThree
-            // 
-            this.towerThree.AllowDrop = true;
-            this.towerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.towerThree.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.towerThree.Id = 2;
-            this.towerThree.Location = new System.Drawing.Point(283, 2);
-            this.towerThree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.towerThree.Name = "towerThree";
-            this.towerThree.Size = new System.Drawing.Size(150, 266);
-            this.towerThree.TabIndex = 1;
-            // 
             // towerTwo
             // 
             this.towerTwo.AllowDrop = true;
             this.towerTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.towerTwo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.towerTwo.Id = 1;
-            this.towerTwo.Location = new System.Drawing.Point(138, 2);
+            this.towerTwo.Location = new System.Drawing.Point(137, 2);
             this.towerTwo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.towerTwo.Name = "towerTwo";
-            this.towerTwo.Size = new System.Drawing.Size(141, 266);
+            this.towerTwo.Size = new System.Drawing.Size(139, 266);
             this.towerTwo.TabIndex = 2;
+            // 
+            // towerOne
+            // 
+            this.towerOne.AllowDrop = true;
+            this.towerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.towerOne.Location = new System.Drawing.Point(2, 2);
+            this.towerOne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.towerOne.Name = "towerOne";
+            this.towerOne.Size = new System.Drawing.Size(131, 266);
+            this.towerOne.TabIndex = 0;
+            // 
+            // towerThree
+            // 
+            this.towerThree.AllowDrop = true;
+            this.towerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.towerThree.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.towerThree.Id = 2;
+            this.towerThree.Location = new System.Drawing.Point(280, 2);
+            this.towerThree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.towerThree.Name = "towerThree";
+            this.towerThree.Size = new System.Drawing.Size(153, 266);
+            this.towerThree.TabIndex = 1;
             // 
             // MainForm
             // 
@@ -441,6 +454,7 @@
         private TowerUserControl towerTwo;
         private TowerUserControl towerThree;
         private System.Windows.Forms.TextBox textBoxMoves;
+        private System.Windows.Forms.Button buttonResetGame;
     }
 }
 

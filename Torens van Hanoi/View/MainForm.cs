@@ -50,9 +50,8 @@ namespace TowersOfHanoi.Views
                 {
                     if (engine.HasWon())
                     {
-                        MessageBox.Show("Gewonnen!!!", "Info", MessageBoxButtons.OK);
                         engine.Reset();
-                        textBoxMessages.Text = "";
+                        textBoxMessages.Text = "Je hebt get gedaan!!!";
                     }
 
                     textBoxMoves.Text = engine.Moves.ToString();
@@ -102,8 +101,25 @@ namespace TowersOfHanoi.Views
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //go home
+
             tohGame.Visible = false;
             easterEgg.Visible = false;
+
+            //reset
+
+            GameEngine.Instance.Reset();
+
+            var engine = GameEngine.Instance;
+            for (var i = 0; i < _colors.Length; i++)
+            {
+                engine.AddDisc(0, i + 1, _colors[i]);
+            }
+
+            towerTwo.Controls.Clear();
+            towerThree.Controls.Clear();
+
+            textBoxMoves.Text = "0";
         }
 
         //ToH Game/Easter Egg
@@ -115,6 +131,25 @@ namespace TowersOfHanoi.Views
                 Subscriptions.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private void buttonResetGame_Click(object sender, EventArgs e)
+        {
+            //reset
+
+            GameEngine.Instance.Reset();
+
+            var engine = GameEngine.Instance;
+            for (var i = 0; i < _colors.Length; i++)
+            {
+                engine.AddDisc(0, i + 1, _colors[i]);
+            }
+
+            towerTwo.Controls.Clear();
+            towerThree.Controls.Clear();
+
+            textBoxMoves.Text = "0";
+            textBoxMessages.Text = "Ahh, toch opnieuw proberen?";
         }
     }
 }
