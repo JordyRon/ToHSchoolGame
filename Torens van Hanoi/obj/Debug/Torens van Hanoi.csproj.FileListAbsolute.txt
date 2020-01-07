@@ -1,10 +1,22 @@
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\Torens van Hanoi.exe.config
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\Torens van Hanoi.exe
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\Torens van Hanoi.pdb
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csprojAssemblyReference.cache
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.Form1.resources
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.Properties.Resources.resources
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csproj.GenerateResource.cache
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.exe
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.pdb
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.View.TowerUserControl.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.MainForm.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\TowersOfHanoi.exe.config
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\TowersOfHanoi.exe
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\TowersOfHanoi.pdb
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Reactive.dll
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Reactive.Linq.dll
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.ValueTuple.dll
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Reactive.xml
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Reactive.Linq.xml
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.ValueTuple.xml
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.Properties.Resources.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.View.TowerUserControl.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csproj.CopyComplete
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.exe
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.pdb

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Reactive.Disposables;
+using System.Windows.Forms;
+using TowersOfHanoi.Models;
+using TowersOfHanoi;
+
 
 namespace Torens_van_Hanoi
 {
@@ -114,6 +114,21 @@ namespace Torens_van_Hanoi
                 Subscriptions.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private void towerOne_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void towerTwo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelBottom_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

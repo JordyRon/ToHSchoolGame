@@ -32,12 +32,6 @@
             this.timeCalculationLabel = new System.Windows.Forms.Label();
             this.easterEgg = new System.Windows.Forms.Panel();
             this.tohGame = new System.Windows.Forms.Panel();
-            this.gamePanel = new System.Windows.Forms.Panel();
-            this.labelMoves = new System.Windows.Forms.Label();
-            this.textBoxMoves = new System.Windows.Forms.TextBox();
-            this.towerThree = new System.Windows.Forms.Panel();
-            this.towerTwo = new System.Windows.Forms.Panel();
-            this.towerOne = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,10 +39,19 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.easterEggText = new System.Windows.Forms.Label();
+            this.gamePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.towerThree = new System.Windows.Forms.Panel();
+            this.towerTwo = new System.Windows.Forms.Panel();
+            this.towerOne = new System.Windows.Forms.Panel();
+            this.textBoxMoves = new System.Windows.Forms.TextBox();
+            this.labelMoves = new System.Windows.Forms.Label();
+            this.textBoxMessages = new System.Windows.Forms.TextBox();
+            this.groupBoxMessages = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.easterEgg.SuspendLayout();
             this.tohGame.SuspendLayout();
             this.gamePanel.SuspendLayout();
+            this.groupBoxMessages.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -205,6 +208,9 @@
             // 
             // tohGame
             // 
+            this.tohGame.Controls.Add(this.groupBoxMessages);
+            this.tohGame.Controls.Add(this.labelMoves);
+            this.tohGame.Controls.Add(this.textBoxMoves);
             this.tohGame.Controls.Add(this.gamePanel);
             this.tohGame.Controls.Add(this.button4);
             this.tohGame.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -213,58 +219,6 @@
             this.tohGame.Size = new System.Drawing.Size(459, 380);
             this.tohGame.TabIndex = 6;
             this.tohGame.Visible = false;
-            // 
-            // gamePanel
-            // 
-            this.gamePanel.Controls.Add(this.labelMoves);
-            this.gamePanel.Controls.Add(this.textBoxMoves);
-            this.gamePanel.Controls.Add(this.towerThree);
-            this.gamePanel.Controls.Add(this.towerTwo);
-            this.gamePanel.Controls.Add(this.towerOne);
-            this.gamePanel.Location = new System.Drawing.Point(12, 12);
-            this.gamePanel.Name = "gamePanel";
-            this.gamePanel.Size = new System.Drawing.Size(432, 276);
-            this.gamePanel.TabIndex = 4;
-            // 
-            // labelMoves
-            // 
-            this.labelMoves.AutoSize = true;
-            this.labelMoves.Location = new System.Drawing.Point(19, 250);
-            this.labelMoves.Name = "labelMoves";
-            this.labelMoves.Size = new System.Drawing.Size(39, 13);
-            this.labelMoves.TabIndex = 6;
-            this.labelMoves.Text = "Moves";
-            // 
-            // textBoxMoves
-            // 
-            this.textBoxMoves.Location = new System.Drawing.Point(64, 247);
-            this.textBoxMoves.Name = "textBoxMoves";
-            this.textBoxMoves.Size = new System.Drawing.Size(71, 20);
-            this.textBoxMoves.TabIndex = 5;
-            // 
-            // towerThree
-            // 
-            this.towerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.towerThree.Location = new System.Drawing.Point(287, 21);
-            this.towerThree.Name = "towerThree";
-            this.towerThree.Size = new System.Drawing.Size(129, 219);
-            this.towerThree.TabIndex = 2;
-            // 
-            // towerTwo
-            // 
-            this.towerTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.towerTwo.Location = new System.Drawing.Point(152, 21);
-            this.towerTwo.Name = "towerTwo";
-            this.towerTwo.Size = new System.Drawing.Size(129, 219);
-            this.towerTwo.TabIndex = 1;
-            // 
-            // towerOne
-            // 
-            this.towerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.towerOne.Location = new System.Drawing.Point(17, 21);
-            this.towerOne.Name = "towerOne";
-            this.towerOne.Size = new System.Drawing.Size(129, 219);
-            this.towerOne.TabIndex = 0;
             // 
             // button4
             // 
@@ -333,6 +287,86 @@
             this.easterEggText.TabIndex = 0;
             this.easterEggText.Text = "WOW je hebt mn easter egg ontdekt";
             // 
+            // gamePanel
+            // 
+            this.gamePanel.ColumnCount = 3;
+            this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.58044F));
+            this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.41956F));
+            this.gamePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.gamePanel.Controls.Add(this.towerOne, 0, 0);
+            this.gamePanel.Controls.Add(this.towerTwo, 1, 0);
+            this.gamePanel.Controls.Add(this.towerThree, 2, 0);
+            this.gamePanel.Location = new System.Drawing.Point(12, 12);
+            this.gamePanel.Name = "gamePanel";
+            this.gamePanel.RowCount = 1;
+            this.gamePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.57875F));
+            this.gamePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.42125F));
+            this.gamePanel.Size = new System.Drawing.Size(435, 270);
+            this.gamePanel.TabIndex = 5;
+            // 
+            // towerThree
+            // 
+            this.towerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.towerThree.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.towerThree.Location = new System.Drawing.Point(287, 3);
+            this.towerThree.Name = "towerThree";
+            this.towerThree.Size = new System.Drawing.Size(145, 264);
+            this.towerThree.TabIndex = 2;
+            // 
+            // towerTwo
+            // 
+            this.towerTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.towerTwo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.towerTwo.Location = new System.Drawing.Point(141, 3);
+            this.towerTwo.Name = "towerTwo";
+            this.towerTwo.Size = new System.Drawing.Size(140, 264);
+            this.towerTwo.TabIndex = 1;
+            this.towerTwo.Paint += new System.Windows.Forms.PaintEventHandler(this.towerTwo_Paint);
+            // 
+            // towerOne
+            // 
+            this.towerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.towerOne.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.towerOne.Location = new System.Drawing.Point(3, 3);
+            this.towerOne.Name = "towerOne";
+            this.towerOne.Size = new System.Drawing.Size(132, 264);
+            this.towerOne.TabIndex = 0;
+            this.towerOne.Paint += new System.Windows.Forms.PaintEventHandler(this.towerOne_Paint);
+            // 
+            // textBoxMoves
+            // 
+            this.textBoxMoves.Location = new System.Drawing.Point(63, 300);
+            this.textBoxMoves.Name = "textBoxMoves";
+            this.textBoxMoves.Size = new System.Drawing.Size(42, 20);
+            this.textBoxMoves.TabIndex = 6;
+            // 
+            // labelMoves
+            // 
+            this.labelMoves.AutoSize = true;
+            this.labelMoves.Location = new System.Drawing.Point(18, 303);
+            this.labelMoves.Name = "labelMoves";
+            this.labelMoves.Size = new System.Drawing.Size(39, 13);
+            this.labelMoves.TabIndex = 7;
+            this.labelMoves.Text = "Moves";
+            // 
+            // textBoxMessages
+            // 
+            this.textBoxMessages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMessages.Location = new System.Drawing.Point(3, 16);
+            this.textBoxMessages.Name = "textBoxMessages";
+            this.textBoxMessages.Size = new System.Drawing.Size(194, 20);
+            this.textBoxMessages.TabIndex = 8;
+            // 
+            // groupBoxMessages
+            // 
+            this.groupBoxMessages.Controls.Add(this.textBoxMessages);
+            this.groupBoxMessages.Location = new System.Drawing.Point(18, 326);
+            this.groupBoxMessages.Name = "groupBoxMessages";
+            this.groupBoxMessages.Size = new System.Drawing.Size(200, 45);
+            this.groupBoxMessages.TabIndex = 9;
+            this.groupBoxMessages.TabStop = false;
+            this.groupBoxMessages.Text = "groupBox2";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,8 +391,10 @@
             this.easterEgg.ResumeLayout(false);
             this.easterEgg.PerformLayout();
             this.tohGame.ResumeLayout(false);
+            this.tohGame.PerformLayout();
             this.gamePanel.ResumeLayout(false);
-            this.gamePanel.PerformLayout();
+            this.groupBoxMessages.ResumeLayout(false);
+            this.groupBoxMessages.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,12 +425,14 @@
         private System.Windows.Forms.Label easterEggText;
         private System.Windows.Forms.Panel tohGame;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel gamePanel;
         private System.Windows.Forms.Panel towerThree;
         private System.Windows.Forms.Panel towerTwo;
         private System.Windows.Forms.Panel towerOne;
-        private System.Windows.Forms.TextBox textBoxMoves;
+        private System.Windows.Forms.TableLayoutPanel gamePanel;
         private System.Windows.Forms.Label labelMoves;
+        private System.Windows.Forms.TextBox textBoxMoves;
+        private System.Windows.Forms.GroupBox groupBoxMessages;
+        private System.Windows.Forms.TextBox textBoxMessages;
     }
 }
 
