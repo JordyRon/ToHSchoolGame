@@ -1,0 +1,10 @@
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\Torens van Hanoi.exe.config
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\Torens van Hanoi.exe
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\Torens van Hanoi.pdb
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csprojAssemblyReference.cache
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.Form1.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.Properties.Resources.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csproj.GenerateResource.cache
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.exe
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.pdb
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.View.TowerUserControl.resources
