@@ -1,6 +1,5 @@
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csprojAssemblyReference.cache
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csproj.GenerateResource.cache
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens_van_Hanoi.MainForm.resources
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\TowersOfHanoi.exe.config
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\TowersOfHanoi.exe
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\TowersOfHanoi.pdb
@@ -16,7 +15,8 @@ C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.R
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\bin\Debug\System.ValueTuple.xml
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.Properties.Resources.resources
-C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.View.TowerUserControl.resources
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\Torens van Hanoi.csproj.CopyComplete
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.exe
 C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.pdb
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.Views.MainForm.resources
+C:\Users\jordy\source\repos\Torens van Hanoi\Torens van Hanoi\obj\Debug\TowersOfHanoi.Views.TowerUserControl.resources

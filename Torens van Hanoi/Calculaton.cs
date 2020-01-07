@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TowersOfHanoi.Views;
 
-namespace Torens_van_Hanoi
+namespace TowersOfHanoi
 {
     class Calculaton
     {
@@ -32,7 +33,7 @@ namespace Torens_van_Hanoi
             }
 
 
-            if(aantalSchijven >= 64)
+            if(aantalSchijven > 64)
             {
                 MessageBox.Show("Geef een getal onder de 64 AUB");
 
@@ -108,7 +109,8 @@ namespace Torens_van_Hanoi
 
             //Conclusie
 
-            form.movesLabel.Text = "Je hebt " + aantalStappen + " stappen nodig om de Torens van Hanoi\nmet " + aantalSchijven + " schijven op te lossen";
+            form.movesLabel.Text = "Je hebt " + aantalStappen + " stappen nodig om de Torens van Hanoi\n" +
+                "met " + aantalSchijven + " schijven op te lossen";
 
             form.centuryResult.Text = eeuwFinal + " Eeuw";
 
